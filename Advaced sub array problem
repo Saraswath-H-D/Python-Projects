@@ -1,0 +1,12 @@
+def max_score(N,K,A):
+    max_sum=0
+    for i in range(N-K+1)
+        current_sum=0
+        for j in range(K):
+            current_sum+=A[i+j]*(j+1)
+        max_sum=max(max_sum,current_sum)
+    return max_sum
+N=int(input())
+K=int(input())
+A=list(map(int,input().split()))
+print(max_score(N,K,A))
